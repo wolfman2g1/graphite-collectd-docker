@@ -21,7 +21,6 @@ RUN apt-get -y --force-yes install vim\
  pkg-config\
  nodejs\
  snmpd\
- snmp-mibs-downloader\
  nano\
  collectd
 
@@ -64,9 +63,9 @@ ADD scripts/django_admin_init.exp /usr/local/bin/django_admin_init.exp
 RUN /usr/local/bin/django_admin_init.exp
 
 # set up collectd
-RUN git clone x
-WORKDIR /
-RUN cp
+#RUN git clone x
+#WORKDIR /
+#RUN cp
 
 # logging support
 RUN mkdir -p /var/log/carbon /var/log/graphite /var/log/nginx
