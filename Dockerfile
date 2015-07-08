@@ -23,8 +23,7 @@ RUN apt-get -y --force-yes install vim\
  snmpd\
  snmp-mibs-downloader\
  nano\
- collectd\
- git
+ collectd
 
 # python dependencies
 RUN pip install django==1.3\
