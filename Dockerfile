@@ -4,4 +4,6 @@ RUN yum -y upgrade
 
 
 # dependencies 
-yum install -y httpd net-snmp perl pycairo mod_wsgi python-devel git gcc-c++ epel-release python-pip node npm
+RUN yum install -y httpd net-snmp perl pycairo\
+mod_wsgi python-devel git gcc-c++\
+epel-release python-pip node npm
