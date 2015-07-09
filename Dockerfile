@@ -1,4 +1,4 @@
-FROM centos:latesr
+FROM centos:latest
 MAINTAINER Ryan Jones <ryan@ryankdjones.com>
 RUN yum -y upgrade
 
