@@ -1,5 +1,7 @@
-FROM hopsoft/graphite-statsd
+FROM centos:latesr
 MAINTAINER Ryan Jones <ryan@ryankdjones.com>
-RUN apt-get update
-RUN apt-get -y install collectd collectd-utils
-CMD ["/sbin/my_init"]
+RUN yum -y upgrade
+
+
+# dependencies 
+yum install -y httpd net-snmp perl pycairo mod_wsgi python-devel git gcc-c++ epel-release python-pip node npm
